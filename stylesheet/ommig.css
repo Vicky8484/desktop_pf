@@ -1,0 +1,119 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*disabler funktion i andre opløsninger*/
+@media screen and (max-width: 1920px) {
+  body {
+    background-color: #509471;
+  }
+
+  #disclaimer-box {
+    padding-top: 5rem;
+    display: block;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: black 5px 6px 7px;
+    font-size: 2rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  #ommig-word {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #disclaimer-box {
+    display: none;
+  }
+
+  /*navn for main*/
+  #ommig-word {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #f0f0f0;
+  }
+
+  /*negative space ved siden af dokumentet*/
+  .space {
+    background-color: #f0f0f0;
+  }
+
+  /*hele dokument*/
+  .doc {
+    background-color: #fff;
+    border: 1px solid rgb(163, 163, 163);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-family: "Gudea", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 5rem;
+  }
+
+  .back {
+    font-size: 2rem;
+    padding: 3rem;
+    padding-top: 3rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .back:hover {
+    color: rgb(63, 63, 63);
+  }
+
+  /*text på siden*/
+  h1 {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding-right: 1rem;
+  }
+
+  /*flexer indhold i boxene*/
+  .flex {
+    display: flex;
+  }
+
+  /*justere billed størrelser*/
+  .billede {
+    height: 300px;
+    padding-right: 0.5rem;
+  }
+
+  /*første content box*/
+  .box1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /*anden content box*/
+  .box2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /*tredje content box*/
+  .box3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}

@@ -1,0 +1,169 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*disabler funktion i andre opløsninger*/
+@media screen and (max-width: 1920px) {
+  body {
+    background-color: #509471;
+  }
+
+  #disclaimer-box {
+    padding-top: 5rem;
+    display: block;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: black 5px 6px 7px;
+    font-size: 2rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  #skrivebord {
+    display: none;
+  }
+
+  #sem1-mappebox {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #disclaimer-box {
+    display: none;
+  }
+  /*gør at body ikke ødelægger det i andre desktop opløsninger*/
+  body {
+    background-color: #509471;
+    overflow-y: hidden;
+  }
+
+  /*skrivebord forside*/
+  #skrivebord {
+    background-image: linear-gradient(to top, #509471, #76e2aa);
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    overflow-x: hidden;
+  }
+
+  /*midter-div der indeholder h1'ere med navn*/
+  .navn {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 8rem;
+    width: 700px;
+    text-shadow: #123549 6px 5px 3px;
+    font-family: "Port Lligat Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #199153;
+  }
+
+  /*sætter animation på de forskellige navne*/
+  .victory {
+    animation: change 4s ease-out infinite;
+  }
+
+  .okosun {
+    animation: change2 4s ease-out infinite;
+  }
+
+  @keyframes change {
+    25% {
+      font-family: "Kablammo", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    75% {
+      font-family: "Nosifer", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: capitalize;
+    }
+    100% {
+      font-family: "Sancreek", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  @keyframes change2 {
+    25% {
+      font-family: "Sancreek", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    75% {
+      font-family: "Kablammo", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    100% {
+      font-family: "Nosifer", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  /*gør billed-ikoner den rigtige størrelse*/
+  .minify {
+    height: 70px;
+    width: 80px;
+  }
+
+  .minify2 {
+    height: 70px;
+    width: 60px;
+  }
+
+  /*rykker mapperne derhen på skrivebordet jeg vil have dem*/
+  .sem1 {
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+
+  .sem2 {
+    padding-top: 3rem;
+    padding-left: 10rem;
+  }
+
+  .hobby {
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+
+  .ommig {
+    padding-top: 5rem;
+    padding-left: 7rem;
+  }
+
+  .papirkurv {
+    padding-top: 16rem;
+    padding-left: 12rem;
+  }
+
+  a {
+    color: white;
+    text-shadow: 1px 1px 0px #000000a3;
+    text-decoration: none;
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+}
