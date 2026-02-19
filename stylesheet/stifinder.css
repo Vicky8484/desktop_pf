@@ -32,7 +32,6 @@
   /******SEMESTER 1 OVERSIGT******/
   .sem1-mappe {
     background-color: #e2f0e8;
-    display: flex;
   }
 
   .sem1-mappe a {
@@ -43,4 +42,8 @@
   .darken:hover {
     filter: brightness(95%);
   }
+}
+
+.flex {
+  display: flex;
 }
