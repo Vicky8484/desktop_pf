@@ -53,6 +53,7 @@ img {
   #skrivebord {
     background-image: linear-gradient(to top, #509471, #76e2aa);
     height: 700px;
+    display: flex;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     overflow-x: hidden;
@@ -61,7 +62,7 @@ img {
   /*midter-div der indeholder h1'ere med navn*/
   .navn {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-top: 8rem;
     width: 700px;
     text-shadow: #123549 6px 5px 3px;
