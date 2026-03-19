@@ -12,6 +12,34 @@ img {
 }
 
 /*disabler funktion i andre opløsninger*/
+header {
+  height: 60px;
+  background-color: #509471;
+}
+
+header h2 {
+  color: #78b595;
+  padding: 1rem;
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+}
+
+.sidefod {
+  padding-top: 2rem;
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+
+.sidehoved {
+  padding-bottom: 2rem;
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+
+.sidefod a {
+  color: #616190;
+}
+
 @media screen and (max-width: 1920px) {
   body {
     background-color: #509471;
@@ -55,14 +83,14 @@ img {
   /*hele dokument*/
   .doc {
     background-color: #fff;
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid #a3a3a3;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
     font-family: "Gudea", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .back {
@@ -74,7 +102,7 @@ img {
   }
 
   .back:hover {
-    color: rgb(63, 63, 63);
+    color: #3f3f3f;
   }
 
   /*text på siden*/
